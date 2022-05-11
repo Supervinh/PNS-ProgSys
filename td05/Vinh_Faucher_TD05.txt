@@ -1,0 +1,10 @@
+1) Sans close : Si le programme trouve le fichier, il print “fichier : nombre“ avec nombre >=3, et -1 s’il ne le trouve pas.
+Avec close : si le fichier est trouvé, le nombre sera tout le temps 3, toujours -1 sinon.
+On a toujours stdin = 0, stdout = 1 et stderr = 2.
+On commence donc obligatoirement à 3, parce que les chiffres précédents sont déjà pris.
+L’intérêt de fermer les fichiers après utilisation permet de pouvoir reprendre le même identifiant et de l’assigner au fichier suivant.
+Pas de différence entre terminal et visual.
+
+
+4. On peut voir que le processus enfant a "accès" au fichier ouvert par son processus parent et peut lire à l'intérieur et également lister les fichiers que son parent à ouvert.
+On peut donc en déduire que le processus fils hérite du descripteur des fichiers ouverts par son père ainsi que des répertoires.

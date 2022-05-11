@@ -1,0 +1,5 @@
+1. Les numeros de descripteurs de fichiers 0,1,2 sont reservé pour l'entree, la sortie et l'erreur standard.
+Fermer un fihcier libere son file directory, ce qui permet de reutiliser son numero
+
+4. Le processus enfant peut lire dans le fichier ouvert par son parent, et lister les fichiers du dossier ouvert par son parent.
+L'heritage fonctionne donc pour les descripteurs de fichiers et les dossiers ouverts.
