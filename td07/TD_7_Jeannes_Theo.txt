@@ -1,0 +1,13 @@
+1. 1. xeyes bloque le terminal
+    2. ^Z suspend le processus, et permet donc de reutiliser le terminal
+    3. bg envoie la commande en arriere plan, ce qui permet a xeyes de fonctionner en arriere plan
+    4. 6421
+    5. SIGSTOP revient a faire ^Z, et interrompt le programme
+    6. -SIGCONT(18) permet de continuer le fil du programme
+    7.  En utilsant pidof, on peut recuperer le pid et donc fermer le programme avec son nom
+4. Dans les 2 programmes, envoyer un signal arrete le sleep qui renvoie le temps restant
+6. Le programme permet de mettre en evidence les differences entre differents etats :
+    Bloquer un signal le conserve, mais n'a pas de notions de nombres
+    un handlernull ou null ignorera le signal
+    le handler standard applique le signal
+7. Pour que le cadet envoye un signal a l'ainé, il faut d'abord le pid de l'ainé. Les roles sont donc difficilement interchangeables car dependant de l'ordre de creation des processus
