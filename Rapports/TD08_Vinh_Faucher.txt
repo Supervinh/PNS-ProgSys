@@ -1,5 +1,0 @@
-TD8:
-1) 104 octets, 100 pour le tableau et 4 pour l'entier
-2) Sauf erreur de calcul, il reste 112 en place disponible, or un malloc avec la valeur 80 utilisera 144 de mémoire, cela déclenchera donc un nouvel appel
-à sbrk
-3)En enlevant le header de taille 16, on a un espace de taille 48-16=32, donc on peut faire un malloc avec la valeur 20.
