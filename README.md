@@ -1,0 +1,3 @@
+# Programmation Système
+
+Cet enseignement est un cours de programmation système. Il est plus particulièrement basé sur la norme Posix, mais nous explorerons les concepts équivalents d'autres systèmes d'exploitation comme l'interface de programmation Win32. Les principaux concepts des systèmes d'exploitation sont présentés (entrées-sorties, systèmes de fichiers, processus, signaux, exceptions, types, processus légers, ...). Ceci nous permettra de jeter les bases des mécanismes fondamentaux d'un système d'exploitation en implémentant, tant sous Unix que sous Windows, certains aspects spécifiques.
